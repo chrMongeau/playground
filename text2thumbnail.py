@@ -3,6 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 from xml.dom.minidom import parse
 from os import path
 
+files_source = '/sdf/arpa/af/c/chr/tmp/files.txt'
 dir_to_save = '/sdf/arpa/af/c/chr/html/stst/'
 
 margin = 4
@@ -30,7 +31,7 @@ font_abstract = ImageFont.truetype(font, size_abstract, encoding='unic')
 
 
 
-all_files = open('/sdf/arpa/af/c/chr/tmp/files.txt', 'r')
+all_files = open(files_source, 'r')
 file_list = all_files.readlines()
 all_files.close()
 
